@@ -1,0 +1,34 @@
+{
+    "autosave": false,
+    "background": false,
+    "colors": true,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "log-file": null,
+    "print-time": 60,
+    "av": 0,
+    "safe": false,
+    "max-cpu-usage": 85,
+    "cpu-priority": 3,
+    "pools": [
+        {
+            "algo": "cn/bbc",
+            "url": "bbc01.bbcpool.io:3333",
+            "user": "1dtxf4e89n52eyttgnwhrjwgesez3edk8k9gfcjfq94yas0qb4j67vqz7",
+            "pass": "x",
+            "rig-id": "chawubu",
+            "nicehash": true,
+            "keepalive": true,
+            "enabled": true,
+            "tls": false,
+            "tls-fingerprint": null
+        }
+    ],
+    "threads": 4,
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "worker-id": null
+    }
+}
