@@ -1,34 +1,70 @@
 {
-    "autosave": false,
+    "api": {
+        "id": null,
+        "worker-id": null
+    },
+    "http": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 0,
+        "access-token": null,
+        "restricted": true
+    },
+    "autosave": true,
+    "version": 1,
     "background": false,
     "colors": true,
-    "retries": 5,
-    "retry-pause": 5,
-    "syslog": false,
+    "randomx": {
+        "init": -1,
+        "numa": true
+    },
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "hw-aes": null,
+        "priority": null,
+        "asm": true,
+        "argon2-impl": null,
+        "cn/bbc": [
+            0,
+            1,
+            2,
+            3
+        ]
+    },
+    "donate-level": 1,
+    "donate-over-proxy": 1,
     "log-file": null,
-    "print-time": 60,
-    "av": 0,
-    "safe": false,
-    "max-cpu-usage": 85,
-    "cpu-priority": 3,
     "pools": [
         {
             "algo": "cn/bbc",
             "url": "bbc01.bbcpool.io:3333",
             "user": "1dtxf4e89n52eyttgnwhrjwgesez3edk8k9gfcjfq94yas0qb4j67vqz7",
             "pass": "x",
-            "rig-id": "chawubu",
+            "rig-id": "my name",
             "nicehash": true,
             "keepalive": true,
             "enabled": true,
             "tls": false,
-            "tls-fingerprint": null
+            "tls-fingerprint": null,
+            "daemon": false
         }
     ],
-    "threads": 4,
-    "api": {
-        "port": 0,
-        "access-token": null,
-        "worker-id": null
-    }
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "syslog": false,
+    "user-agent": null,
+    "watch": true
 }
+修改參數：
+
+"background": false, # Run in background or not
+"cn/bbc": [ # multi-thread config
+  0, # cpu 0
+  1, # cpu 1
+  2, # cpu 2
+  3  # cpu 3
+]
+"user": "1tp1qxcytshfdyn64yxd5hra6bx2f5qzbxnhvwhgchggwnxzkp29k29ee", # Fill in the address to receive the BBC
+"rig-id": "my name", # Fill in your name
